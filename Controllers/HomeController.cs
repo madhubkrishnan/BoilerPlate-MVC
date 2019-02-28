@@ -19,7 +19,7 @@ namespace BoilerPlateMVC.Controllers
 
             try
             {
-                var ans = 10 / 0;
+                var ans = 10 / 2;
             }
             catch 
             {
