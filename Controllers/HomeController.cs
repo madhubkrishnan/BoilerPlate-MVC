@@ -17,6 +17,16 @@ namespace BoilerPlateMVC.Controllers
             ViewData["Version"] = mvcName.Version.Major + "." + mvcName.Version.Minor;
             ViewData["Runtime"] = isMono ? "Mono" : ".NET";
 
+            try
+            {
+                var ans = 10 / 0;
+            }
+            catch 
+            {
+                Console.WriteLine("Div by Zero exception");
+            }
+
+
             return View();
         }
     }
